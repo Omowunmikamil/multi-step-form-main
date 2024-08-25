@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link href="./src/output.css" rel="stylesheet" />
+
+    <title>Multi-step form</title>
+  </head>
+  <body>
+    <main>
+      <section
+        class="flex justify-between items-center flex-col h-screen lg:flex-row lg:p-4"
+      >
+        <article
+          class="bg-[url('/assets/images/bg-sidebar-mobile.svg')] lg:bg-[url('/assets/images/bg-sidebar-desktop.svg')] lg:bg-cover bg-no-repeat bg-center lg:rounded-lg h-[8.6rem] w-full lg:h-full lg:w-72 lg:p-8 flex flex-row lg:flex-col lg:items-left justify-center lg:justify-normal pt-4 gap-3 lg:gap-8"
+        >
+          <div class="inline-flex">
+            <a href="./index.html" class=""
+              ><button
+                class="px-4 py-1.5 text-n-white text-lg rounded-full border-2 hover:bg-p-lightBlue hover:text-p-marineBlue focus:ring-p-lightBlue focus-visible:bg-p-lightBlue active:bg-p-lightBlue"
+              >
+                1
+              </button></a
+            >
+            <p class="text-sm text-n-lightGray ml-4 hidden lg:block">
+              Step 1<br />
+              <span class="text-n-white uppercase font-semibold"
+                >Your info</span
+              >
+            </p>
+          </div>
+
+          <div class="inline-flex">
+            <a href="./plan.html" class=""
+              ><button
+                class="px-4 py-1.5 text-n-white text-lg rounded-full border-2 hover:bg-p-lightBlue hover:text-p-marineBlue focus:ring-p-lightBlue focus-visible:bg-p-lightBlue active:bg-p-lightBlue"
+              >
+                2
+              </button></a
+            >
+            <p class="text-sm text-n-lightGray ml-4 hidden lg:block">
+              Step 2<br />
+              <span class="text-n-white uppercase font-semibold"
+                >Select plan</span
+              >
+            </p>
+          </div>
+
+          <div class="inline-flex">
+            <a href="./add-ons.html" class=""
+              ><button
+                class="px-4 py-1.5 text-n-white text-lg rounded-full border-2 hover:bg-p-lightBlue hover:text-p-marineBlue focus:ring-p-lightBlue focus-visible:bg-p-lightBlue active:bg-p-lightBlue"
+              >
+                3
+              </button></a
+            >
+            <p class="text-sm text-n-lightGray ml-4 hidden lg:block">
+              Step 3<br />
+              <span class="text-n-white uppercase font-semibold">Add-ons</span>
+            </p>
+          </div>
+
+          <div class="inline-flex">
+            <a href="./summary.html" class=""
+              ><button
+                class="px-4 py-1.5 text-n-white text-lg rounded-full border-2 hover:bg-p-lightBlue hover:text-p-marineBlue focus:ring-p-lightBlue focus-visible:bg-p-lightBlue active:bg-p-lightBlue"
+              >
+                4
+              </button></a
+            >
+            <p class="text-sm text-n-lightGray ml-4 hidden lg:block">
+              Step 4<br />
+              <span class="text-n-white uppercase font-semibold">Summary</span>
+            </p>
+          </div>
+        </article>
+
+        <article class="lg:p-8">
+          <!-- Form content goes here -->
+        </article>
+      </section>
+    </main>
+
+    <script src="./src/scrip.js"></script>
+  </body>
+</html>
