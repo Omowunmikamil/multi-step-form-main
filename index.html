@@ -19,7 +19,7 @@
   <body>
     <main>
       <section
-        class="flex justify-between items-center flex-col h-screen lg:flex-row lg:p-4"
+        class="flex justify-normal flex-col h-screen lg:flex-row p-3 lg:p-4"
       >
         <article
           class="bg-[url('/assets/images/bg-sidebar-mobile.svg')] lg:bg-[url('/assets/images/bg-sidebar-desktop.svg')] lg:bg-cover bg-no-repeat bg-center lg:rounded-lg h-[8.6rem] w-full lg:h-full lg:w-72 lg:p-8 flex flex-row lg:flex-col lg:items-left justify-center lg:justify-normal pt-4 gap-3 lg:gap-8"
@@ -85,8 +85,75 @@
           </div>
         </article>
 
-        <article class="lg:p-8">
-          <!-- Form content goes here -->
+        <article class="lg:m-auto lg:w-[45rem] lg:mt-8">
+          <div class="">
+            <h1 class="text-4xl text-p-marineBlue font-ubuntu font-bold mb-2">
+              Personal info
+            </h1>
+            <p class="text-base text-n-coolGray mb-8">
+              Please provide your name, email address, and phone number.
+            </p>
+          </div>
+          <form action="">
+            <div class="mb-6 mt-4">
+              <label
+                for="name"
+                class="block text-sm text-p-marineBlue mb-2 font-medium text-n-gray"
+              >
+                Name
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="e.g. Stephen King"
+                required
+                class="mt-1 block w-full px-3 py-3 border border-gray-300 focus:border-p-lightBlue focus:ring-2 focus:ring-p-lightBlue rounded-md"
+              />
+            </div>
+
+            <div class="mb-6">
+              <label
+                for="email"
+                class="block text-sm text-p-marineBlue mb-2 font-medium text-n-gray"
+              >
+                Email address
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="e.g. stephenking@lorem.com"
+                required
+                class="mt-1 block w-full px-3 py-3 border border-gray-300 ocus:border-p-lightBlue focus:ring-2 focus:ring-p-lightBlue rounded-md"
+              />
+            </div>
+
+            <div class="mb-6">
+              <label
+                for="phone"
+                class="block text-sm text-p-marineBlue mb-2 font-medium text-n-gray"
+              >
+                Phone number
+              </label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="e.g. +1 234 567 890"
+                required
+                class="mt-1 block w-full px-3 py-3 border border-gray-300 focus:border-p-lightBlue focus:ring-2 focus:ring-p-lightBlue rounded-md"
+              />
+            </div>
+          </form>
+          <div class="flex justify-end mt-44">
+            <button
+              type="submit"
+              class="mt-6 px-4 py-2 text-n-white bg-p-marineBlue hover:bg-p-marineBlue focus:ring-p-lightBlue focus-visible:bg-p-lightBlue active:bg-p-lightBlue rounded-md"
+            >
+              Next Step
+            </button>
+          </div>
         </article>
       </section>
     </main>
