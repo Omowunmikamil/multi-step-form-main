@@ -16,13 +16,11 @@
 
     <title>Multi-step form</title>
   </head>
-  <body>
+  <body class="bg-n-magnolia lg:bg-n-white">
     <main>
-      <section
-        class="flex justify-normal flex-col h-screen lg:flex-row p-3 lg:p-4"
-      >
+      <section class="flex justify-normal flex-col h-screen lg:flex-row lg:p-4">
         <article
-          class="bg-[url('/assets/images/bg-sidebar-mobile.svg')] lg:bg-[url('/assets/images/bg-sidebar-desktop.svg')] lg:bg-cover bg-no-repeat bg-center lg:rounded-lg h-[8.6rem] w-full lg:h-full lg:w-72 lg:p-8 flex flex-row lg:flex-col lg:items-left justify-center lg:justify-normal pt-4 gap-3 lg:gap-8"
+          class="bg-[url('/assets/images/bg-sidebar-mobile.svg')] lg:bg-[url('/assets/images/bg-sidebar-desktop.svg')] bg-cover bg-no-repeat bg-center lg:rounded-lg h-[10rem] w-full lg:h-full lg:w-72 lg:p-8 flex flex-row lg:flex-col lg:items-left justify-center lg:justify-normal pt-6 gap-3 lg:gap-8 relative"
         >
           <div class="inline-flex">
             <a href="./index.html" class=""
@@ -32,12 +30,14 @@
                 1
               </button></a
             >
-            <p class="text-sm text-n-lightGray ml-4 hidden lg:block">
-              Step 1<br />
-              <span class="text-n-white uppercase font-semibold"
-                >Your info</span
-              >
-            </p>
+            <a href="./index.html" class="">
+              <p class="text-sm text-n-lightGray ml-4 hidden lg:block">
+                Step 1<br />
+                <span class="text-n-white uppercase font-semibold"
+                  >Your info</span
+                >
+              </p>
+            </a>
           </div>
 
           <div class="inline-flex">
@@ -48,12 +48,14 @@
                 2
               </button></a
             >
-            <p class="text-sm text-n-lightGray ml-4 hidden lg:block">
-              Step 2<br />
-              <span class="text-n-white uppercase font-semibold"
-                >Select plan</span
-              >
-            </p>
+            <a href="./plan.html" class="">
+              <p class="text-sm text-n-lightGray ml-4 hidden lg:block">
+                Step 2<br />
+                <span class="text-n-white uppercase font-semibold"
+                  >Select plan</span
+                >
+              </p>
+            </a>
           </div>
 
           <div class="inline-flex">
@@ -64,10 +66,14 @@
                 3
               </button></a
             >
-            <p class="text-sm text-n-lightGray ml-4 hidden lg:block">
-              Step 3<br />
-              <span class="text-n-white uppercase font-semibold">Add-ons</span>
-            </p>
+            <a href="./add-ons.html" class="">
+              <p class="text-sm text-n-lightGray ml-4 hidden lg:block">
+                Step 3<br />
+                <span class="text-n-white uppercase font-semibold"
+                  >Add-ons</span
+                >
+              </p>
+            </a>
           </div>
 
           <div class="inline-flex">
@@ -78,81 +84,111 @@
                 4
               </button></a
             >
-            <p class="text-sm text-n-lightGray ml-4 hidden lg:block">
-              Step 4<br />
-              <span class="text-n-white uppercase font-semibold">Summary</span>
-            </p>
+            <a href="./summary.html" class="">
+              <p class="text-sm text-n-lightGray ml-4 hidden lg:block">
+                Step 4<br />
+                <span class="text-n-white uppercase font-semibold"
+                  >Summary</span
+                >
+              </p>
+            </a>
           </div>
         </article>
 
-        <article class="lg:m-auto lg:w-[45rem] lg:mt-8">
-          <div class="">
-            <h1 class="text-4xl text-p-marineBlue font-ubuntu font-bold mb-2">
-              Personal info
-            </h1>
-            <p class="text-base text-n-coolGray mb-8">
-              Please provide your name, email address, and phone number.
-            </p>
+        <article
+          class="absolute top-[5.8rem] bottom-0 lg:left-[27rem] lg:top-0 lg:m-auto lg:w-[48rem] lg:mt-8 flex flex-col justify-between w-full"
+        >
+          <div class="bg-n-white mx-4 p-4 rounded-md lg:bg-transparent">
+            <div class="">
+              <h1
+                class="text-lg lg:text-4xl text-p-marineBlue font-ubuntu font-bold mb-1 lg:mb-2"
+              >
+                Personal info
+              </h1>
+              <p class="text-sm lg:text-base text-n-coolGray mb-4 lg:mb-8">
+                Please provide your name, email address, and phone number.
+              </p>
+            </div>
+            <form action="">
+              <div class="my-3 lg:mb-6 lg:mt-4">
+                <div class="flex justify-between items-center">
+                  <label
+                    for="name"
+                    class="block text-xs lg:text-sm text-p-marineBlue lg:mb-2 font-medium"
+                  >
+                    Name
+                  </label>
+                  <p class="text-p-strawberryRed text-sm hidden">
+                    This field is required
+                  </p>
+                </div>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="e.g. Stephen King"
+                  required
+                  class="lg:mt-1 block w-full px-3 py-2 text-sm lg:text-base lg:py-3 border-2 outline-none focus:outline-none rounded-md"
+                />
+              </div>
+
+              <div class="my-3 lg:mb-6 lg:mt-4">
+                <div class="flex justify-between items-center">
+                  <label
+                    for="name"
+                    class="block text-xs lg:text-sm text-p-marineBlue lg:mb-2 font-medium"
+                  >
+                    Email address
+                  </label>
+                  <p class="text-p-strawberryRed text-sm hidden">
+                    This field is required
+                  </p>
+                </div>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="e.g. stephenking@lorem.com"
+                  required
+                  class="lg:mt-1 block w-full px-3 py-2 text-sm lg:text-base lg:py-3 border-2 outline-none focus:outline-none rounded-md"
+                />
+              </div>
+
+              <div class="my-3 lg:mb-6 lg:mt-4">
+                <div class="flex justify-between items-center">
+                  <label
+                    for="name"
+                    class="block text-xs lg:text-sm text-p-marineBlue lg:mb-2 font-medium"
+                  >
+                    Phone number
+                  </label>
+                  <p class="text-p-strawberryRed text-sm hidden">
+                    This field is required
+                  </p>
+                </div>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="e.g. +1 234 567 890"
+                  required
+                  class="lg:mt-1 block w-full px-3 py-2 text-sm lg:text-base lg:py-3 border-2 outline-none focus:outline-none rounded-md"
+                />
+              </div>
+            </form>
           </div>
-          <form action="">
-            <div class="mb-6 mt-4">
-              <label
-                for="name"
-                class="block text-sm text-p-marineBlue mb-2 font-medium text-n-gray"
-              >
-                Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="e.g. Stephen King"
-                required
-                class="mt-1 block w-full px-3 py-3 border border-gray-300 focus:border-p-lightBlue focus:ring-2 focus:ring-p-lightBlue rounded-md"
-              />
-            </div>
 
-            <div class="mb-6">
-              <label
-                for="email"
-                class="block text-sm text-p-marineBlue mb-2 font-medium text-n-gray"
+          <div
+            class="w-full bg-n-white p-4 lg:px-8 flex justify-end place-items-end lg:mt-40 lg:bg-transparent"
+          >
+            <a href="./plan.html" class="">
+              <button
+                type="submit"
+                class="px-3 lg:px-6 py-2 lg:py-3 text-sm lg:text-base text-n-magnolia bg-p-marineBlue hover:bg-hsl(213, 96%, 10%) focus:ring-p-lightBlue focus-visible:bg-hsl(213, 96%, 10%) active:bg-hsl(213, 96%, 10%) rounded-md cursor-pointer"
               >
-                Email address
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="e.g. stephenking@lorem.com"
-                required
-                class="mt-1 block w-full px-3 py-3 border border-gray-300 ocus:border-p-lightBlue focus:ring-2 focus:ring-p-lightBlue rounded-md"
-              />
-            </div>
-
-            <div class="mb-6">
-              <label
-                for="phone"
-                class="block text-sm text-p-marineBlue mb-2 font-medium text-n-gray"
-              >
-                Phone number
-              </label>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                placeholder="e.g. +1 234 567 890"
-                required
-                class="mt-1 block w-full px-3 py-3 border border-gray-300 focus:border-p-lightBlue focus:ring-2 focus:ring-p-lightBlue rounded-md"
-              />
-            </div>
-          </form>
-          <div class="flex justify-end mt-44">
-            <button
-              type="submit"
-              class="mt-6 px-4 py-2 text-n-white bg-p-marineBlue hover:bg-p-marineBlue focus:ring-p-lightBlue focus-visible:bg-p-lightBlue active:bg-p-lightBlue rounded-md"
-            >
-              Next Step
-            </button>
+                Next Step
+              </button>
+            </a>
           </div>
         </article>
       </section>

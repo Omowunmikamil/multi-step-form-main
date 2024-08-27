@@ -6,5 +6,20 @@
 
 :root {
   --fontUbuntu: "Ubuntu", sans-serif;
-  color-scheme: light;
 }
+
+@layer components {
+  .monthly,
+  .yearly {
+    @apply text-n-coolGray font-semibold;
+  }
+  .sw-active {
+    @apply text-p-marineBlue;
+  }
+}
+
+/* @layer base {
+  button {
+    @apply bg-p-lightBlue active:bg-p-lightBlue !important;
+  }
+} */

@@ -16,13 +16,11 @@
 
     <title>Multi-step form</title>
   </head>
-  <body>
+  <body class="bg-n-magnolia lg:bg-n-white">
     <main>
-      <section
-        class="flex justify-between items-center flex-col h-screen lg:flex-row lg:p-4"
-      >
+      <section class="flex justify-normal flex-col h-screen lg:flex-row lg:p-4">
         <article
-          class="bg-[url('/assets/images/bg-sidebar-mobile.svg')] lg:bg-[url('/assets/images/bg-sidebar-desktop.svg')] lg:bg-cover bg-no-repeat bg-center lg:rounded-lg h-[8.6rem] w-full lg:h-full lg:w-72 lg:p-8 flex flex-row lg:flex-col lg:items-left justify-center lg:justify-normal pt-4 gap-3 lg:gap-8"
+          class="bg-[url('/assets/images/bg-sidebar-mobile.svg')] lg:bg-[url('/assets/images/bg-sidebar-desktop.svg')] bg-cover bg-no-repeat bg-center lg:rounded-lg h-[10rem] w-full lg:h-full lg:w-72 lg:p-8 flex flex-row lg:flex-col lg:items-left justify-center lg:justify-normal pt-6 gap-3 lg:gap-8 relative"
         >
           <div class="inline-flex">
             <a href="./index.html" class=""
@@ -32,12 +30,14 @@
                 1
               </button></a
             >
-            <p class="text-sm text-n-lightGray ml-4 hidden lg:block">
-              Step 1<br />
-              <span class="text-n-white uppercase font-semibold"
-                >Your info</span
-              >
-            </p>
+            <a href="./index.html" class="">
+              <p class="text-sm text-n-lightGray ml-4 hidden lg:block">
+                Step 1<br />
+                <span class="text-n-white uppercase font-semibold"
+                  >Your info</span
+                >
+              </p>
+            </a>
           </div>
 
           <div class="inline-flex">
@@ -48,12 +48,14 @@
                 2
               </button></a
             >
-            <p class="text-sm text-n-lightGray ml-4 hidden lg:block">
-              Step 2<br />
-              <span class="text-n-white uppercase font-semibold"
-                >Select plan</span
-              >
-            </p>
+            <a href="./plan.html" class="">
+              <p class="text-sm text-n-lightGray ml-4 hidden lg:block">
+                Step 2<br />
+                <span class="text-n-white uppercase font-semibold"
+                  >Select plan</span
+                >
+              </p>
+            </a>
           </div>
 
           <div class="inline-flex">
@@ -64,10 +66,14 @@
                 3
               </button></a
             >
-            <p class="text-sm text-n-lightGray ml-4 hidden lg:block">
-              Step 3<br />
-              <span class="text-n-white uppercase font-semibold">Add-ons</span>
-            </p>
+            <a href="./add-ons.html" class="">
+              <p class="text-sm text-n-lightGray ml-4 hidden lg:block">
+                Step 3<br />
+                <span class="text-n-white uppercase font-semibold"
+                  >Add-ons</span
+                >
+              </p>
+            </a>
           </div>
 
           <div class="inline-flex">
@@ -78,15 +84,50 @@
                 4
               </button></a
             >
-            <p class="text-sm text-n-lightGray ml-4 hidden lg:block">
-              Step 4<br />
-              <span class="text-n-white uppercase font-semibold">Summary</span>
-            </p>
+            <a href="./summary.html" class="">
+              <p class="text-sm text-n-lightGray ml-4 hidden lg:block">
+                Step 4<br />
+                <span class="text-n-white uppercase font-semibold"
+                  >Summary</span
+                >
+              </p>
+            </a>
           </div>
         </article>
 
-        <article class="lg:p-8">
-          <!-- Form content goes here -->
+        <article
+          class="absolute top-[5.8rem] bottom-0 lg:left-[27rem] lg:top-0 lg:m-auto lg:w-[48rem] lg:mt-8 flex flex-col justify-between w-full"
+        >
+          <div class="bg-n-white mx-4 p-4 rounded-md lg:bg-transparent">
+            <div class="">
+              <h1
+                class="text-lg lg:text-4xl text-p-marineBlue font-ubuntu font-bold mb-1 lg:mb-2"
+              >
+                Personal info
+              </h1>
+              <p class="text-sm lg:text-base text-n-coolGray mb-4 lg:mb-8">
+                Please provide your name, email address, and phone number.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="w-full bg-n-white p-4 lg:pr-8 flex justify-between items-center lg:mt-40 lg:bg-transparent"
+          >
+            <a
+              href="./plan.html"
+              class="text-n-coolGray hover:text-p-marineBlue cursor-pointer"
+              >Go back</a
+            >
+            <a href="./summary.html" class="">
+              <button
+                type="submit"
+                class="px-3 lg:px-6 py-2 lg:py-3 text-sm lg:text-base text-n-magnolia bg-p-marineBlue hover:bg-hsl(213, 96%, 10%) focus:ring-p-lightBlue focus-visible:bg-hsl(213, 96%, 10%) active:bg-hsl(213, 96%, 10%) rounded-md cursor-pointer"
+              >
+                Next Step
+              </button>
+            </a>
+          </div>
         </article>
       </section>
     </main>
